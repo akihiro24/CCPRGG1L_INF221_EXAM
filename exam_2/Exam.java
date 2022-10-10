@@ -67,7 +67,7 @@ public class Exam {
         System.out.print("Enter your first name in UPPERCASE: ");
         String firstNameInUpperCase = scan.next();
 
-        if (firstNameInLowerCase.toLowerCase().equals("railey") && firstNameInUpperCase.toUpperCase().equals("RAILEY")) {
+        if (firstNameInLowerCase.equals("railey") && firstNameInUpperCase.equals("RAILEY")) {
             System.out.println("True!");
         } else {
             System.out.println("False!");
@@ -101,7 +101,7 @@ public class Exam {
         System.out.print("Enter your ten digit student number: ");
         studentNumber = scan.nextInt(); 
         
-        if (studentNumber == 2022103078) {
+        if (studentNumber == 2022103087) {
             System.out.println("Valid!");
         } else {
             System.out.println("Invalid");
@@ -149,11 +149,15 @@ public class Exam {
             break;
 
         // If BSCS
-        case "BSCS":
-        System.out.print("Enter your specialization (DF or ML): ");
-        String specialization2 = scan.next();
-        System.out.println("Valid! You are in " + course + " " + specialization2);
-        break;
+            case "BSCS":
+            System.out.print("Enter your specialization (DF or ML): ");
+            String specialization2 = scan.next();
+            System.out.println("Valid! You are in " + course + " " + specialization2);
+            break;
+
+            default:
+            System.out.print("Invalid!");
+            break;
 
         }
 
